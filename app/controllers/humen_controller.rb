@@ -5,6 +5,10 @@ class HumenController < ApplicationController
   # GET /humen.json
   def index
     @humen = Human.all
+    respond_to do |format|
+      format.json #{ render json: @humen, status: 200 }
+      format.xml { render xml: @humen, status: 200 }
+    end
   end
 
   # GET /humen/1

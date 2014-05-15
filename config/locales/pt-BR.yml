@@ -19,6 +19,6 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
-en:
+pt-BR:
   hello: "Hello world"
-  human_message: 'Watch out for %{name}!'
+  human_message: 'Cuidado com %{name}!'
