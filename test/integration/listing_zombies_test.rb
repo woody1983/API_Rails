@@ -24,7 +24,7 @@ class ListingZombiesTest < ActionDispatch::IntegrationTest
 
   test 'returns zombie by id' do
     zombie = Zombie.create!(name: 'Joanna', bio: 'shotgun')
-    get "/zombies#{zombie.id}"
+    get "/zombies/#{zombie.id}"
     assert_equal 200, response.status
 
     zombie_response = json(response.body)#JSON.parse(response.body, symbolize_names: true)
