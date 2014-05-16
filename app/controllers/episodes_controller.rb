@@ -28,8 +28,10 @@ class EpisodesController < ApplicationController
 
     respond_to do |format|
       if @episode.save
-        format.html { redirect_to @episode, notice: 'Episode was successfully created.' }
-        format.json { render :show, status: :created, location: @episode }
+#        head 204, location: @episode
+        #format.html { redirect_to @episode, notice: 'Episode was successfully created.' }
+ #1        format.json { head 204, location: @episode }
+        format.json { render nothing: true, status: 204, location: @episode }
         #render json: @episode, status: 201, location: @episode
       else
         format.html { render :new }
