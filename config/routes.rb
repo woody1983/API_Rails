@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :episodes
+
   resources :humen
 
   #resources :zombies
