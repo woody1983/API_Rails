@@ -22,3 +22,4 @@
 en:
   hello: "Hello world"
   human_message: 'Watch out for %{name}!'
+  aloha_message: 'Aloha %{name}!'

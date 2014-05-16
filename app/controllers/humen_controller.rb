@@ -8,6 +8,7 @@ class HumenController < ApplicationController
     respond_to do |format|
       format.json #{ render json: @humen, status: 200 }
       format.xml { render xml: @humen, status: 200 }
+      format.rss #{ render html: @humen, status: 200 }
     end
   end
 
